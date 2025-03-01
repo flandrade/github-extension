@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub PR Timeline Filter</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #24292f;
+    }
+    .filter-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    button {
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #d0d7de;
+      background-color: #f6f8fa;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: left;
+    }
+    button:hover {
+      background-color: #f3f4f6;
+    }
+    button.active {
+      background-color: #0969da;
+      color: white;
+      border-color: #0969da;
+    }
+    .divider {
+      height: 1px;
+      background-color: #d0d7de;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <h3>PR Timeline Filter</h3>
+
+  <div class="section">
+    <div class="section-title">Hidden Items</div>
+    <div class="filter-buttons">
+      <button id="show-hidden-items" class="active">Show Hidden Items</button>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-title">Timeline Filters</div>
+    <div class="filter-buttons">
+      <button id="filter-all" class="active">All Items</button>
+      <button id="filter-comments">Comments & Code Reviews</button>
+      <button id="filter-non-comments">Non-Comment Items</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

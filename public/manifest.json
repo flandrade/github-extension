@@ -1,0 +1,16 @@
+{
+  "name": "GitHub PR Timeline Filter",
+  "version": "1.0",
+  "description": "Filter GitHub PR timeline items and auto-load content",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

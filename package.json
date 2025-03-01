@@ -1,0 +1,15 @@
+{
+  "name": "github-timeline-filter",
+  "version": "1.0.0",
+  "description": "Filter GitHub PR timeline items and auto-load content",
+  "scripts": {
+    "build": "tsc && cp -r public/* dist/",
+    "watch": "tsc -w",
+    "dev": "tsc -w & cp -r public/* dist/"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/chrome": "^0.0.246",
+    "copyfiles": "^2.4.1"
+  }
+}
