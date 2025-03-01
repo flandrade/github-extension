@@ -40,3 +40,13 @@ pids
 *.pid
 *.seed
 *.pid.lock
+
+# Design files
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+
+# Keep icons
+!public/icons/*.png
